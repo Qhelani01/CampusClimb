@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  background-color: #a47068;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 1rem;
+}
+
+.icons span {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.about-section {
+  background-color: #555;
+  color: white;
+  padding: 80px;
+  margin: 50px auto;
+  width: 60%;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.signup-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+}

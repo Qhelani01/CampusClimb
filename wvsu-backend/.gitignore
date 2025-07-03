@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Credentials
+credentials.json
+
+# OS files
+.DS_Store
