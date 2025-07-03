@@ -52,3 +52,34 @@ footer {
   margin-top: 50px;
   padding: 20px;
 }
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .about-section {
+    width: 50%;
+    padding: 100px;
+    font-size: 1.5rem;
+  }
+
+  .signup-btn {
+    padding: 20px 60px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Laptop and Desktop */
+@media (min-width: 1024px) {
+  header {
+    padding: 40px;
+  }
+
+  .logo {
+    padding: 20px 50px;
+    font-size: 1.2rem;
+  }
+
+  .about-section {
+    width: 40%;
+    margin: 100px auto;
+  }
+}
