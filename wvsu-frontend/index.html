@@ -3,27 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusClimb - Home</title>
+    <title>CampusClimb - WVSU Opportunities</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <button class="logo">LOGO</button>
-        <div class = "icons">
-            <span class="search">🔍</span>
-            <span class="menu">☰</span>
+    <div class="header-container" id="home">
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#opportunities">Opportunities</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
         </div>
-    </header>
+        
+        <div class="header-flex">
+            <div class="header-item">
+                <h1>CampusClimb</h1>
+                <h3>Discover internships and conferences at WVSU</h3>
+                <p>Your gateway to professional growth and academic excellence</p>
+            </div>
+        </div>
+    </div>
 
-    <main>
-        <div class="about-section">ABOUT</div>
-        <button class="signup-btn">Sign Up!</button>
-    </main>
+    <div id="opportunities" class="opportunities-section">
+        <h2>Available Opportunities</h2>
+        <div class="filters">
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <option value="internship">Internships</option>
+                <option value="conference">Conferences</option>
+            </select>
+            <input type="text" id="searchFilter" placeholder="Search opportunities...">
+        </div>
+        
+        <div id="opportunitiesList" class="opportunities-grid">
+            <!-- Opportunities will be loaded here dynamically -->
+        </div>
+        
+        <div id="loadingMessage" class="loading">
+            <p>Loading opportunities...</p>
+        </div>
+        
+        <div id="noOpportunities" class="no-opportunities" style="display: none;">
+            <p>No opportunities found matching your criteria.</p>
+        </div>
+    </div>
 
-    <footer>
-        <p>Copyright @</p>
-    </footer>
+    <div id="about" class="about-section">
+        <h2>About CampusClimb</h2>
+        <p>CampusClimb is WVSU's premier platform for students to discover and apply for internships and conferences. We connect talented students with opportunities that foster professional development and academic growth.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🎯 Internships</h3>
+                <p>Gain real-world experience in your field of study</p>
+            </div>
+            <div class="feature">
+                <h3>🌐 Conferences</h3>
+                <p>Network with professionals and expand your knowledge</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Easy Access</h3>
+                <p>Browse and apply for opportunities all in one place</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 CampusClimb - WVSU |
+            <a href="/privacy">Privacy Policy</a> |
+            <a href="/terms">Terms of Service</a> | 
+            <a href="/contact">Contact Us</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
